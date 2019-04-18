@@ -1,14 +1,11 @@
 pipeline {
   agent any
   stages {
-    stage('print') {
+    stage('Build 1') {
       steps {
         echo 'Starting build'
-      }
-    }
-    stage('Build') {
-      steps {
-        sh './file'
+        sh '''pwd
+ls'''
       }
     }
   }
