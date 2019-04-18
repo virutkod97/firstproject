@@ -5,7 +5,9 @@ pipeline {
       steps {
         echo 'Starting build'
         sh '''pwd
-ls'''
+ls
+chmod +x file
+./file'''
       }
     }
   }
