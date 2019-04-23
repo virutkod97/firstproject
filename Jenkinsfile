@@ -10,14 +10,14 @@ pipeline {
 ./file'''
           }
         }
-        stage('') {
+        stage('error') {
           steps {
-            timeout(time: 2)
+            sh 'echo "hihi"'
           }
         }
       }
     }
-    stage('') {
+    stage('error') {
       steps {
         sh 'echo "abcdefgh"'
       }
